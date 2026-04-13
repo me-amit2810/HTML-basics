@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms and input tags</title>
+</head>
+
+<body>
+    <h1>Student's Admission Form</h1>
+    <form action="backend.php">
+        <div>
+            <label for="Studentname">Name:</label>
+            <input type="text" name="studentName" value="" placeholder="Enter Your Name" id="Studentname"/>
+        </div>
+        <br />
+        <div>
+            Contact Number:
+            <input type="text" name="contactNumber" value="+91 " placeholder="Enter Your Mobile Number" />
+        </div>
+        <br />
+        <div>
+            Email:
+            <input type="email" name="email" value="" placeholder="Enter Your Email" />
+        </div>
+        <br />
+        <div>
+            Gender: Male<input type="radio" name="gender">female<input type="radio" name="gender">
+        </div>
+        <br>
+        <div>
+            Do you accept terms and conditions?<input type="checkbox" name="checkbox" value="" checked>
+        </div>
+        <br />
+        <div>
+            Date of Birth: <input type="date" name="dob">
+        </div>
+        <br />
+        <div>
+            Upload your image: <input type="file" name="file" accept="image/*">
+        </div>
+        <br>
+        <div>
+            Address:<textarea name="address" id="" rows="1" cols="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Select Course: <select name="options" id="">
+                <option value="">Frontend</option>
+                <option value="">Backend</option>
+                <option value="" selected>Fullstack</option>
+            </select>
+        </div>
+        <br>
+        <div>
+           <input type="submit" value="Submit Form">
+           <input type="reset" value="Reset Form" id="">
+           <button>Go Back</button>
+        </div>
+    </form>
+</body>
+
+</html>
